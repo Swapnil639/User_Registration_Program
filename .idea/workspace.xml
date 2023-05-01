@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e20fdbdd-8d58-425a-97a6-75c7eb1c2189" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/bridgelabz/regex/UserRegistration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bridgelabz/regex/UserRegistration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/bridgelabz/regex/UserRegistrationMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bridgelabz/regex/UserRegistrationMain.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

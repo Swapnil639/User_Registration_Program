@@ -9,6 +9,8 @@ public class UserRegistrationMain {
         userRegistration.emailId();
         userRegistration.phoneNumber();
         userRegistration.password();
+        userRegistration.validEmail();
+        userRegistration.invalidEmail();
 
     }
 }
