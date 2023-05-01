@@ -33,4 +33,17 @@ public class UserRegistration {
             lastName();
         }
     }
+    public void emailId(){
+        System.out.println("Enter the Email Id:");
+        String email=scanner.next();
+        Pattern pattern=Pattern.compile("^[a-z]{2,}+@[a-z]{2,}+.[a-z]{2,}$");
+        Matcher matcher=pattern.matcher(email);
+        if (matcher.matches()){
+            System.out.println("Valid");
+        }
+        else {
+            System.out.println("Invalid email please try again");
+            emailId();
+        }
+    }
 }
