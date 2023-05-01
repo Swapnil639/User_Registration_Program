@@ -5,6 +5,7 @@ public class UserRegistrationMain {
         System.out.println("Welcome to User Registration");
         UserRegistration userRegistration=new UserRegistration();
         userRegistration.firstName();
+        userRegistration.lastName();
 
     }
 }

@@ -20,4 +20,17 @@ public class UserRegistration {
             firstName();
         }
     }
+    public void lastName(){
+        System.out.println("Enter last name:");
+        String lastName=scanner.next();
+        Pattern pattern=Pattern.compile("^[A-Z]{1}[a-z]{3,}$");
+        Matcher matcher=pattern.matcher(lastName);
+        if (matcher.matches()){
+            System.out.println("Valid");
+        }
+        else {
+            System.out.println("Invalid Name please try again");
+            lastName();
+        }
+    }
 }
