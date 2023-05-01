@@ -36,7 +36,7 @@ public class UserRegistration {
     public void emailId(){
         System.out.println("Enter the Email Id:");
         String email=scanner.next();
-        Pattern pattern=Pattern.compile("^[a-z]{2,}+@[a-z]{2,}+.[a-z]{2,}$");
+        Pattern pattern=Pattern.compile("^[a-z0-9]{2,}+@[a-z]{2,}+.[a-z]{2,}$");
         Matcher matcher=pattern.matcher(email);
         if (matcher.matches()){
             System.out.println("Valid");
@@ -44,6 +44,18 @@ public class UserRegistration {
         else {
             System.out.println("Invalid email please try again");
             emailId();
+        }
+    }
+    public void phoneNumber() {
+        System.out.println("Enter the Phone Number with Country Code ");
+        String phoneNumber = scanner.next();
+        Pattern pattern=Pattern.compile("^[+0-9]{2,}+-[0-9]{10}$");
+        Matcher matcher=pattern.matcher(phoneNumber);
+        if (matcher.matches()) {
+            System.out.println("Valid");
+        } else {
+            System.out.println("Invalid Phone Number Please try Again");
+            phoneNumber();
         }
     }
 }
