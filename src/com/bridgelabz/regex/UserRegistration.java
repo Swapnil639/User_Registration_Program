@@ -58,4 +58,16 @@ public class UserRegistration {
             phoneNumber();
         }
     }
+    public void password() {
+        System.out.println("Enter the Password ");
+        String password = scanner.next();
+        Pattern pattern=Pattern.compile("^[a-z]{8,}$");
+        Matcher matcher=pattern.matcher(password);
+        if (matcher.matches()) {
+            System.out.println("Valid");
+        } else {
+            System.out.println("Invalid Password Please try Again");
+            password();
+        }
+    }
 }
